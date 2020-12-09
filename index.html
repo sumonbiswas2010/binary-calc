@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Binary Calculator Project</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <div id="header">
+        <h2>A Binary Calculator</h2>
+        <p class="text">You can also get the decimal calculations <br>Also compatible with all keyboard inputs.</p>
+        <p>Press ESC to Clear and BackSpace to remove the last digit. <br> Enter to calculate.</p>
+    </div>
+    <div id="main">
+        <input id="display" disabled placeholder="0"></textarea>
+    <br>
+    <button class="btn" id="c" onclick="clr()">C</button>
+    <button class="btn" id="b" onclick="backs()"><</button>
+    <button class="btn" onclick="show(0)">0</button>
+    <button class="btn" id="sign1" onclick="opt('+')">+</button>
+    <button class="btn" onclick="show(1)">1</button>
+    <button class="btn" id="sign2" onclick="opt('-')">-</button>
+    <button class="btn" onclick="cal()" id="eq">=</button>
+    <button class="btn" id="sign3" onclick="opt('*')">X</button>
+    
+    <button class="btn" id="sign4" onclick="opt('/')">/</button>
+    <input id="display1" disabled placeholder="Actions in Decimal"></textarea>
+    </div>
+
+    <p id="footer"> &#169; Sumon Biswas </p>
+
+    
+</body>
+</html>
